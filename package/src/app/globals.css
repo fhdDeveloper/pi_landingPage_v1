@@ -176,3 +176,11 @@
 .blog-details p {
     @apply dark:text-white/60 text-muted
 }
+
+html {
+  direction: rtl;
+}
+
+body {
+  text-align: right;
+}

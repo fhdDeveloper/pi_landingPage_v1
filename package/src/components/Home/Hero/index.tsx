@@ -25,18 +25,19 @@ const Hero = () => {
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) relative z-1 md:max-w-(--breakpoint-md) px-4">
         <div className="grid grid-cols-12 items-center">
           <motion.div {...leftAnimation} className="lg:col-span-6 col-span-12">
-            <h1 className="md:text-50 sm:text-40 text-28 text-midnight_text dark:text-white lg:text-start mb-6 lg:w-full sm:w-3/4">
-              Quickest and easiest
+            <h2 className="md:text-40 sm:text-30 text-28 text-midnight_text dark:text-white lg:text-start mb-8 lg:w-full sm:w-3/4">
+               تجربه ی پرداختی امن و راحت
               <br />
-              <span className="bg-border dark:bg-darkHeroBg md:text-50 text-36 rounded-lg lg:text-start text-primary max-w-max">
-                online payment
+               <br />
+              <span className="bg-border dark:bg-darkHeroBg md:text-40 text-36 rounded-lg lg:text-start text-primary max-w-max">
+               استفاده از تکنولوژی nfc
               </span>
               <br />
-              platform for your product.
-            </h1>
+            
+            </h2>
             <p className="sm:text-19 text-16 text-muted dark:text-white/60 text-start lg:max-w-full sm:max-w-75%">
-              Embed powerful financial features into your product, Build in
-              minutes, launch in weeks.
+               یک سیستم پرداخت مبتنی بر NFC و کیف پول دیجیتال ارائه می‌دهیم که پرداخت کرایه تاکسی را به یک فرآیند آنی، بدون اصطکاک و کاملاً دیجیتال تبدیل می‌کند.
+
             </p>
             <div className="flex md:flex-nowrap flex-wrap items-center mt-12 sm:gap-11 gap-6">
               <div>
@@ -44,7 +45,7 @@ const Hero = () => {
                   href="/#started"
                   className="text-17 flex gap-2 items-center bg-primary text-white py-3 px-8 rounded-lg border border-primary hover:text-primary hover:bg-transparent"
                 >
-                  Get Started
+                  دانلود اپلیکیشن
                   <Icon
                     icon="solar:alt-arrow-right-linear"
                     width="13"
@@ -52,7 +53,7 @@ const Hero = () => {
                   />
                 </Link>
               </div>
-              <div>
+              {/* <div>
                 <Link
                   href="/services"
                   className="text-17 flex gap-2 items-center text-muted dark:text-white/60 hover:text-primary hover:dark:text-primary"
@@ -64,10 +65,10 @@ const Hero = () => {
                     height="13"
                   />
                 </Link>
-              </div>
+              </div> */}
             </div>
 
-            <div className="lg:my-28 my-12">
+            {/* <div className="lg:my-28 my-12">
               <p className="text-20 text-muted dark:text-white/60 text-start mb-7">
                 Trusted by
               </p>
@@ -93,7 +94,7 @@ const Hero = () => {
                   </Link>
                 ))}
               </div>
-            </div>
+            </div> */}
           </motion.div>
           <motion.div
             {...rightAnimation}

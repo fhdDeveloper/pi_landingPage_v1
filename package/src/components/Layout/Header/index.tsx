@@ -152,20 +152,20 @@ const Header: React.FC = () => {
           ) : (
             <>
               <Link
-                href="/signin"
+                href="/"
                 className="hidden lg:flex items-center bg-primary border border-primary hover:border-primary dark:text-white text-white px-4 py-2  gap-2 rounded-lg text-16 font-semibold hover:bg-transparent hover:text-primary dark:hover:text-primary"
               >
-                Sign In
+               دانلود اپلیکیشن
                 <Icon icon="solar:arrow-right-linear" width="24" height="24" />
               </Link>
 
-              <Link
+              {/* <Link
                 href="/signup"
                 className="hidden lg:flex items-center border border-primary dark:hover:border-primary bg-transparent dark:text-primary text-primary  px-4 py-2  gap-2 rounded-lg text-16 font-semibold hover:bg-primary hover:text-white dark:hover:text-white"
               >
                 Sign Up
                 <Icon icon="solar:arrow-right-linear" width="24" height="24" />
-              </Link>
+              </Link> */}
             </>
           )}
 
@@ -187,7 +187,7 @@ const Header: React.FC = () => {
       >
         <div className="flex items-center justify-between p-4">
           <h2 className="text-lg font-bold text-midnight_text dark:text-midnight_text">
-            Menu
+            منو
           </h2>
           <button
             onClick={() => setNavbarOpen(false)}
@@ -223,9 +223,9 @@ const Header: React.FC = () => {
                 setNavbarOpen(false);
               }}
             >
-              Sign In
+              دانلود اپلیکیشن
             </Link>
-            <Link
+            {/* <Link
               href="/signup"
               className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700"
               onClick={() => {
@@ -233,7 +233,7 @@ const Header: React.FC = () => {
               }}
             >
               Sign Up
-            </Link>
+            </Link> */}
           </div>
         </nav>
       </div>

@@ -1,4 +1,5 @@
-import { DM_Sans } from "next/font/google";
+//import { DM_Sans } from "next/font/google";
+import { Vazirmatn } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
@@ -6,7 +7,11 @@ import { ThemeProvider } from "next-themes";
 import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import { AuthDialogProvider } from "./context/AuthDialogContext";
 import ScrollToTop from "@/components/ScrollToTop";
-const dmsans = DM_Sans({ subsets: ["latin"] });
+//const dmsans = Vazirmatn({ subsets: ["latin"] });
+const vazir = Vazirmatn({
+  subsets: ["arabic"],
+  weight: ["400", "500", "700"],
+});
 
 export default function RootLayout({
   children,
@@ -16,8 +21,8 @@ export default function RootLayout({
   session: any;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${dmsans.className}`}>
+    <html lang="fa" dir="rtl" suppressHydrationWarning>
+     <body className={`${vazir.className} rtl`}>
         <AuthDialogProvider>
           <SessionProviderComp session={session}>
             <ThemeProvider
