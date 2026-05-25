@@ -17,7 +17,7 @@ const ContactInfo = () => {
                     Email US
                   </span>
                   <p className="text-DeepOcean font-normal text-xl max-w-80 pt-3 pb-7 dark:text-white/60">
-                    Feel free to contact us at info@nicktio.com we’ll respond promptly
+                    Feel free to contact us at info@pi.com we’ll respond promptly
                   </p>
                 </div>
               </div>

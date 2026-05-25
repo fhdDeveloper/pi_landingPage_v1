@@ -11,7 +11,7 @@ import Pricing from "@/components/Home/Pricing";
 import Solution from "@/components/Home/Solution";
 
 export const metadata: Metadata = {
-  title: "Nicktio",
+  title: "pi",
 };
 
 export default function Home() {
